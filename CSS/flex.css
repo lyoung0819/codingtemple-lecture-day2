@@ -1,0 +1,24 @@
+
+.container-1 {
+    border: 5px solid navy;
+    height: 500px;
+    /* flex properties for Parent (aka container) element */
+    display: flex;
+    /* this has made only container-1 direct children into flex items */
+    /* flex-direction always starts at Main Start  */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#child-1 {
+    border: 2px solid red;
+    order: 2;
+    align-self: flex-start;
+}
+
+#child-2 {
+    border: 2px solid green;
+    order: 1;
+    align-self: flex-end;
+}

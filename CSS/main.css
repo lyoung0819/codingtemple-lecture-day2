@@ -47,6 +47,7 @@ h3 {
 section {
     width: 90vw;
     margin:auto;
+    padding: 10px;
 }
 /* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
 
@@ -267,4 +268,4 @@ div [title*="s"] {
     position: sticky;
     top: 10px;
     left: 100px;
-}git c
+}
