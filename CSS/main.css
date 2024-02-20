@@ -1,5 +1,8 @@
 /* Universal Selector */
 
+* {
+    margin: 0;
+}
 
 .navbar{
     display: flex;
@@ -34,29 +37,60 @@ Total Size:
 
 /* Simple Selector */
 /* element: grabs all of the elements base on the element name e.g h1,h2,p,div{} */
+h3 {
+    text-transform: uppercase;
+}
 
-
+section {
+    width: 90vw;
+    margin:auto;
+}
 /* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
 
+.selectors {
+    border: 2px solid orange;
+    padding: 0 1vw;
+    margin: 3vh 0;
+}
 
 /* id: grabs the element with the id. begins with an octothorpe (#) e.g. #idName */
+#simple {
+    text-align:center;
+}
 
-
+/* To grab multiple selections, comma separate before {} */
+h1, h6, #simple {
+    color: green;
+}
 
 /* Combinator Selector - based on the relationship */
-/* Descendant Selector - Used to match all elements that are direct descendants of a specified element */
-
+/* Descendant Selector - Used to match all elements that are direct descendants of a specified element. Below is any h6 that is a descendent of a combo ID */
+#combo h6 {
+    text-align:right;
+}
 
 /* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangably because they are very similar. The difference here though is specificity */
 
+#combo > h6 {
+    color: blue;
+}
 
 /* Adjacent Sibling Selector (+) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
 
+aside + h4 {
+    background-color: pink;
+}
 
-/* General Sibling Selector (~) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+/* General Sibling Selector (~) - Used to select an element that is after another specific element. HAS to be after! */
+aside ~ h3 {
+    background-color:crimson;
+}
 
+/* aside + h2 + h3 {
+    background-color:blue;
+ } this overrides other higher priority/specific commands because each specific element added adds a layer of specificity, and becomes weighted heavier than others */
 
-
+ 
 /* Pseudo-class Selector - Select elements based on a certain state */
 /* selector:pseudo-class{} */
 
