@@ -205,14 +205,29 @@ div [title*="s"] {
 
 /* CSS DISPLAYS */
 
+.block-level {
+    border: 5px solid black;
+}
 
+.block-level > h3 {
+    border: 3px solid magenta;
+    /* overrides the default display: block  */
+    display: inline;
+}
 
 /* 
     Display: None
     Used to hide an element. Commonly used with JavaScript 
 */
 
+#displays a {
+    border: 3px solid firebrick;
+}
 
+#middle {
+    border: 3px solid teal;
+    display: none;
+}
 
 /* CSS POSITIONS */
 
